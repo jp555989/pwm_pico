@@ -28,8 +28,10 @@ int main() {
 		}
 
 			while(get_bootsel_button() != 1){
-				printf("low, kliknij przycisk zeby zresetowac wartosc\r\n");
+				printf("current pwm: \r\n");
 				printf("%d\n", liczba);
+				printf("click to change the % (between 0-100)\r\n");
+
 				pwm_set_chan_level(slice_num, PWM_CHAN_A, 16);
 			
 			}
